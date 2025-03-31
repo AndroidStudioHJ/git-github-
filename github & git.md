@@ -38,7 +38,7 @@ git merge &lt;브랜치 이름&gt;
 <li>main 에 merge 한다.</li>
 <li>브랜치 branch1 를 삭제한다.</li>
 </ol>
-<h2 id="인증1">인증1</h2>
+<h2 id="인증">인증</h2>
 <ol>
 <li>ssh-keygen -t ed25519 -C ‘your_email@example.com’ 로 키쌍을 만든다.</li>
 <li><a href="http://github.com">github.com</a> 에 가서 ed25519.pub 파일 안의 key 값을 등록</li>
