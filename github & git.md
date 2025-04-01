@@ -50,4 +50,8 @@ git merge &lt;브랜치 이름&gt;
 <li>vscode</li>
 <li>sourcetree, github Desktop</li>
 </ol>
+<h2>참고 사이트</h2>
+<ul>
+  <li>https://www.notion.so/git-301d773059e844f5ac52d19463392451</li>
+</ul>
 
