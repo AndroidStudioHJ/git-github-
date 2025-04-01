@@ -53,5 +53,6 @@ git merge &lt;브랜치 이름&gt;
 <h2>참고 사이트</h2>
 <ul>
   <li>https://www.notion.so/git-301d773059e844f5ac52d19463392451</li>
+  <li>https://github.com/hamfan524/Today-We-Learn/blob/main/Git/%EA%B9%83-%ED%98%91%EC%97%85-%ED%8C%80%EC%9E%A5.md</li>
 </ul>
 
