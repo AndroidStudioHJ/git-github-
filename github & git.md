@@ -1,58 +1,73 @@
----
+## 250402 git 복습
+### 브렌치 이동 방법은? 
+```
+git switch <브랜치 이름>
+```
+
+### 로컬 브랜치를 삭제하려면 어떤 명령어를 사용해야 할까요 
+```
+git branch -d <브랜치 이름>
+```
+
+### git 의 3가지 영역은? 
+- working directory
+- staging area(state)
+- local repository
+
+### working directory 에서 stage 로 올리는 방법은? 
+```
+git add .
+```
+
+### 스테이지에서 로컬저장소로 올리는 방법은? 
+```
+git commit -m <커밋 메세지>
+```
+
+### 로컬 저장소에서 원격 저장소로 올리는 방법은? 
+```
+git push -u origin main
+```
+
+### git remote add origin <본인 레파지토리 링크> 의 의미는? 
+>원격 저장소의 위치를 설정 <br>
+>본인 레파지토리 링크> 부분을 origin 으로 잡겠다는 의미
+
+### git push --se3t-upstream origin main 의 의미는? 
+>로컬 브랜치와 원격저장소 브랜치를 추적관계로 설정후 <br>
+>로컬브랜치에 있는 변경사항을 원격저장소로 보낸다
+
+### git push -u origin develop 의 의미는? 
+>로컬브랜치 main를 원격저장소origin에 업로드 하면서 <br>
+>업스트림 브랜치까지 설정해주는 명령어
+
+### 각각 초기의 default branch 이름은? 
+```
+git: master
+github: main
+```
+
+### master 브랜치 이름을 main 이라는 이름으로 바꾸려면? 
+```
+git branch -m master main 
+-m 은 move 라는 의미 
+```
+
+### main 브렌치에 new_branch 를 합치려면? 
+```
+git merge  <브랜치 이름>
+```
+
+### A의 원격저장소에서 B의 원격저장소로 복제하는 용어는? 
+`Fork`
 
 
----
 
-<h1 id="git-시작하는-방법">git 시작하는 방법</h1>
-<p>git init: git 을 시작한다<br>
-git add .: 모든 변경 사항을 추가<br>
-git commit -m ‘커밋 메세지’: 커밋 메세지 필수</p>
-<h2 id="git-로그-확인하는-2가지-방법">git 로그 확인하는 2가지 방법</h2>
-<p>git log: 커밋 히스토리 확인<br>
-git log --oneline: 커밋 히스토리를 한 줄에 필요한 것만 표시</p>
-<h2 id="브랜치를-만드는-3가지-방법">브랜치를 만드는 3가지 방법</h2>
-<p>git branch &lt;브랜치 이름&gt;: 만들기만 한다<br>
-git switch -c &lt;브랜치 이름&gt;: 만들면서 그 브랜치로 이동<br>
-<s>git checkout -b &lt;브랜치 이름&gt;</s></p>
-<h2 id="브렌치-이동">브렌치 이동</h2>
-<p>git switch &lt;브랜치 이름&gt;: 브랜치 이동<br>
-git branch -d &lt;브랜치 이름&gt;: 브랜치 지우기</p>
-<pre><code>새로운 브랜치에서 작업한다.
-master 에 합친다. : merge 명령을 내리는 브랜치가 기준
-git merge &lt;브랜치 이름&gt;
-</code></pre>
-<h2 id="github">github</h2>
-<ol>
-<li>git 하고 다른 회사다</li>
-<li>SEttings 가 여러 개다</li>
-<li>한개라도 파일이 있으면 뜨는 화면, 하나도 없을때</li>
-<li>remote 레포지토리(= 원격 저장소) 만들고, 삭제하기</li>
-<li>브랜치가 msater 가 아니라 main 이다.</li>
-<li>브랜치 만들기</li>
-</ol>
-<hr>
-<ol>
-<li>원격저장소 test 를 만든다</li>
-<li>브랜치 branch1 를 만든다</li>
-<li><a href="http://README.md">README.md</a> 파일을 수정한다.</li>
-<li>main 에 merge 한다.</li>
-<li>브랜치 branch1 를 삭제한다.</li>
-</ol>
-<h2 id="인증">인증</h2>
-<ol>
-<li>ssh-keygen -t ed25519 -C ‘your_email@example.com’ 로 키쌍을 만든다.</li>
-<li><a href="http://github.com">github.com</a> 에 가서 ed25519.pub 파일 안의 key 값을 등록</li>
-<li>git remote set-url origin <a href="mailto:git@github.com">git@github.com</a>:AndroidStudioHJ/my_rep.git 실행</li>
-</ol>
-<h2 id="windows-git">windows git</h2>
-<ol>
-<li>명령창 CLI 모드</li>
-<li>vscode</li>
-<li>sourcetree, github Desktop</li>
-</ol>
-<h2>참고 사이트</h2>
-<ul>
-  <li>https://www.notion.so/git-301d773059e844f5ac52d19463392451</li>
-  <li>https://github.com/hamfan524/Today-We-Learn/blob/main/Git/%EA%B9%83-%ED%98%91%EC%97%85-%ED%8C%80%EC%9E%A5.md</li>
-</ul>
+
+
+
+
+
+
+
 
